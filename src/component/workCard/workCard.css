@@ -1,0 +1,69 @@
+.work-tab{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px 0;
+    flex-wrap: wrap;
+}
+
+.work-box{
+    border-radius: 20px;
+    padding: 25px;
+    transition: 0.4s ease-in-out;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,0.2);
+}
+
+.work-box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px -15px rgba(0,0,0,0.3);
+}
+
+.worktext{
+    padding-bottom: 20px;
+    color: white; 
+}
+
+.visit-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    transition: all 0.3s;
+}
+
+.visit-link:hover {
+    border-bottom-color: white;
+}
+
+.workText {
+    margin-bottom: 5px;
+}
+
+.worktext h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Scroll Effect Container - Now for iFrame */
+.workImgContainer {
+    width: 100%;
+    height: 300px; /* Slightly taller for better viewing */
+    overflow: hidden;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background: white; /* Fallback */
+}
+
+.workIframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+    /* Enable smooth scrolling inside iframe */
+    scrollbar-width: thin; 
+}

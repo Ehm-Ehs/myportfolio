@@ -1,0 +1,63 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light Mode Tokens */
+    --bg-color: #F8FAFC;
+    --surface-color: #FFFFFF;
+    --primary-color: #0F766E;
+    --secondary-color: #2563EB;
+    --accent-color: #F97316;
+    --text-main: #1F2937;
+    --text-sub: #4B5563;
+    --border-color: #E5E7EB;
+    
+    --btn-text: #FFFFFF;
+  }
+
+  .dark {
+    /* Dark Mode Tokens */
+    --bg-color: #0B1413;
+    --surface-color: #111C1B;
+    --primary-color: #2DD4BF;
+    --secondary-color: #60A5FA;
+    --accent-color: #FB923C;
+    --text-main: #E5E7EB;
+    --text-sub: #9CA3AF;
+    --border-color: #1F2E2C;
+    
+    --btn-text: #0B1413;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* Apply global theme background and text */
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  transition: all 0.3s ease-in-out;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Hide scrollbar utility for skills section as fallback */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

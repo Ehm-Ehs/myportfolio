@@ -1,0 +1,10 @@
+.intro{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-image: url(../images/blur-stain.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+

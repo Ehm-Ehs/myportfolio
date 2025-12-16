@@ -1,0 +1,23 @@
+.tabs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tab-title:hover{
+transform: scale(.98);
+border-right:1px solid #6f9fd8;
+border-left:1px solid #6f9fd8;
+box-shadow:0 2px 3px 0px rgba(0,0,0,0.25);
+border-radius:10px;
+transition:.2s all; 
+}
+
+.tab-link{
+    padding:10px 10px;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
