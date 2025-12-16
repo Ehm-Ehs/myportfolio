@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import {
-  CheckCircle,
   ChevronDown,
   ChevronUp,
   Layers,
-  Zap,
   Smartphone,
   Cpu,
   Users,

@@ -4,7 +4,7 @@ function getRandomValue(min, max) {
   return Math.random() * (max - min) + min;
 }
 
-export default function EnhancedInteractiveCircles({ technologies }) {
+export default function InteractiveCircles({ technologies }) {
   const [stoppedCircle, setStoppedCircle] = useState(null);
   const [stoppedPosition, setStoppedPosition] = useState(null);
   const [activeDialog, setActiveDialog] = useState(null);
@@ -38,16 +38,19 @@ export default function EnhancedInteractiveCircles({ technologies }) {
     }
   };
 
-  const handleOutsideClick = (event) => {
-    if (containerRef.current && !containerRef.current.contains(event.target)) {
-      setStoppedCircle(null);
-      setStoppedPosition(null);
-      setActiveDialog(null);
-      if (resumeTimer) clearTimeout(resumeTimer);
-    }
-  };
-
   useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (
+        containerRef.current &&
+        !containerRef.current.contains(event.target)
+      ) {
+        setStoppedCircle(null);
+        setStoppedPosition(null);
+        setActiveDialog(null);
+        if (resumeTimer) clearTimeout(resumeTimer);
+      }
+    };
+
     document.addEventListener("mousedown", handleOutsideClick);
     return () => {
       document.removeEventListener("mousedown", handleOutsideClick);
