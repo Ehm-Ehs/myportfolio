@@ -3,7 +3,6 @@ import ContactUs from './component/contactUs/contactUs';
 import Experience from './component/experiences/experience';
 import Header from './component/Header/header';
 import Intro from './component/intro/intro';
-import EnhancedInteractiveCircles from './component/Skills/skills';
 import SkillsDiagram from './component/Skills/skils2';
 import Work from './component/works/work';
 import Certifications from './component/certifications/certifications';
