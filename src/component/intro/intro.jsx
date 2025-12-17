@@ -40,15 +40,21 @@ function Intro() {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto pt-2">
-          <button className="bg-primary text-btn-text px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform duration-200 shadow-xl shadow-primary/20 flex items-center justify-center gap-2 group">
+          <a
+            href="#work"
+            className="bg-primary text-btn-text px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform duration-200 shadow-xl shadow-primary/20 flex items-center justify-center gap-2 group"
+          >
             View Selected Projects
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
+          </a>
 
-          <button className="border-2 border-border text-text-main px-8 py-4 rounded-full font-bold text-lg hover:bg-surface hover:border-text-main transition-all duration-200 flex items-center justify-center gap-2">
+          <a
+            href="https://docs.google.com/document/d/1LDrMKaBH7gHpZFeoZxxAaCkp4K4Elqg_/export?format=pdf"
+            className="border-2 border-border text-text-main px-8 py-4 rounded-full font-bold text-lg hover:bg-surface hover:border-text-main transition-all duration-200 flex items-center justify-center gap-2"
+          >
             <FileText className="w-5 h-5" />
             Download Resume
-          </button>
+          </a>
         </div>
       </div>
 
